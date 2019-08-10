@@ -1,22 +1,25 @@
 "use strict";
 
-// service worker registration - remove if you're not going to use it
 
-if ('serviceWorker' in navigator) {
-  window.addEventListener('load', function() {
-    navigator.serviceWorker.register('serviceworker.js').then(function(registration) {
-      // Registration was successful
-      console.log('ServiceWorker registration successful with scope: ', registration.scope);
-    }, function(err) {
-      // registration failed :(
-      console.log('ServiceWorker registration failed: ', err);
-    });
-  });
-}
+const btnSave = document.querySelector(".btn--save");
+const btnLoad = document.querySelector(".btn--load");
+const btnDelete = document.querySelector(".btn--delete");
+const btnRefresh = document.querySelector(".btn--refresh");
+const textarea = document.querySelector(".textarea");
 
-// place your code below
+btnSave.addEventListener("click", () => {
+  localStorage.setItem("textareaValue", textarea.value);
+});
 
+btnLoad.addEventListener("click", () => {
+  const textareaValue = localStorage.getItem("textareaValue");
+  textarea.value = textareaValue;
+});
 
-console.log(`Hello world!`);
+btnDelete.addEventListener("click", () => {
+  localStorage.removeItem("textareaValue");
+});
 
-
+btnRefresh.addEventListener("click", () => {
+  document.location.reload();
+});
