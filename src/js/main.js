@@ -5,6 +5,7 @@ const btnSave = document.querySelector(".btn--save");
 const btnLoad = document.querySelector(".btn--load");
 const btnDelete = document.querySelector(".btn--delete");
 const btnRefresh = document.querySelector(".btn--refresh");
+const btn = document.querySelector(".btn");
 const textarea = document.querySelector(".textarea");
 
 btnSave.addEventListener("click", () => {
