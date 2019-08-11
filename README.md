@@ -1,9 +1,9 @@
-# wtf-gulp-starter
+![page screenshot](github/scr1.png)
 
-`npm install -g gulp-cli`
+# Simple text editor
 
-`npm install`
+  Prosty projekt w którym ćwiczyłem użycie local storage, preprocesora SASS oraz Gulpa.
+Zapraszam do sprawdzenia efektu: [kliknij tutaj](https://jedrzejch.github.io/simpleTxtEditor/)
 
-`gulp`
 
-To publish your page using github pages use `npm run deploy`
+
