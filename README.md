@@ -1,5 +1,6 @@
-# wtf-gulp-starter
+# Simple text editor
 
+[click and check](https://jedrzejch.github.io/simpleTxtEditor/)
 `npm install -g gulp-cli`
 
 `npm install`
