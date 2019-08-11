@@ -12,14 +12,18 @@
 <body>
   <main class="container">
     <h1 class="header">My simple text editor</h1>
-    <label for="text">Put in your text here:</label>
-    <textarea name="text" id="text" class="textarea" cols="45" rows="10"></textarea>
-    <nav class="nav">
-      <button class="btn btn--right btn--save">save</button>
-      <button class="btn btn--right btn--load">load</button>
-      <button class="btn btn--right btn--delete">forget</button>
-      <button class="btn btn--refresh">refresh</button>
-    </nav>
+    <form class="form">
+      <p>
+        <label for="text">Put in your text here:</label>
+        <textarea name="text" id="text" class="textarea" cols="45" rows="10"></textarea>
+      </p>
+      <div class="action">
+        <button class="btn btn--right btn--save">save</button>
+        <button class="btn btn--right btn--load">load</button>
+        <button class="btn btn--right btn--delete">forget</button>
+        <button class="btn btn--refresh">refresh</button>
+      </div>
+    </form>
   </main>
   <script src="js/main.js"></script>
 </body>
